@@ -73,7 +73,7 @@ export default function Projects() {
             </p>
             <div className='flex justify-center lg:justify-start'>
               {tags?.map(tag => (
-                <p key={title + " " + tag} className={`text-xs rounded-md bg-slate-900 dark:bg-slate-600 ${(tagTextColor as any)[tag]} mr-1.5 mb-1 px-2.5 py-0.5`}>{tag}</p>
+                <p key={title + " " + tag} className={`text-xs rounded-md bg-slate-900 dark:bg-sky-900 ${(tagTextColor as any)[tag]} mr-1.5 mb-1 px-2.5 py-0.5`}>{tag}</p>
               ))}
             </div>
           </a>
