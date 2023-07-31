@@ -45,3 +45,13 @@ body {
   z-index: 9999;
   animation: glowing-cursor-animation 1s infinite;
 }
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  visibility: visible;
+  z-index: 50;
+}

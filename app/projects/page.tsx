@@ -1,3 +1,4 @@
+import '../globals.css'
 import Image from 'next/image'
 import chatImage from '../../public/chat.png'
 import bookmarkManagerImage from '../../public/bookmark_manager.png'
@@ -76,45 +77,55 @@ export default function Projects() {
                 <ul className='flex justify-center lg:justify-start m-1'>
                   <li>
                     <a target="_blank" href={repo}>
-                      <button className='rounded-full p-2 shadow-sm bg-slate-300 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-700'>
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                          height="20px"
-                          width="20px"
-                        >
-                          <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-                        </svg>
-                      </button>
+                      <div className='has-tooltip'>
+                        <button className='rounded-full p-2 shadow-sm bg-slate-300 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-700'>
+                          <svg
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            viewBox="0 0 24 24"
+                            height="20px"
+                            width="20px"
+                          >
+                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                          </svg>
+                        </button>
+                        <span className='tooltip rounded shadow-sm p-1 my-auto bg-gray-100 text-xs mt-10 -translate-x-14'>
+                          Source Code
+                        </span>
+                      </div>
                     </a>
                   </li>
                   {url && (
                     <li className='ml-2'>
                       <a target="_blank" href={url}>
-                        <button className='rounded-full p-2 shadow-sm bg-slate-300 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-700'>
-                          <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px">
-                            <path
-                              fill="currentColor"
-                              fillRule="evenodd"
-                              d="M14 7a1 1 0 00-1 1v8a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1h-4zm3 2h-2v6h2V9z"
-                              clipRule="evenodd"
-                            />
-                            <path
-                              fill="currentColor"
-                              d="M6 7a1 1 0 000 2h4a1 1 0 100-2H6zM6 11a1 1 0 100 2h4a1 1 0 100-2H6zM5 16a1 1 0 011-1h4a1 1 0 110 2H6a1 1 0 01-1-1z"
-                            />
-                            <path
-                              fill="currentColor"
-                              fillRule="evenodd"
-                              d="M4 3a3 3 0 00-3 3v12a3 3 0 003 3h16a3 3 0 003-3V6a3 3 0 00-3-3H4zm16 2H4a1 1 0 00-1 1v12a1 1 0 001 1h16a1 1 0 001-1V6a1 1 0 00-1-1z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </button>
+                        <div className='has-tooltip'>
+                          <button className='rounded-full p-2 shadow-sm bg-slate-300 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-700'>
+                            <svg fill="none" viewBox="0 0 24 24" height="20px" width="20px">
+                              <path
+                                fill="currentColor"
+                                fillRule="evenodd"
+                                d="M14 7a1 1 0 00-1 1v8a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1h-4zm3 2h-2v6h2V9z"
+                                clipRule="evenodd"
+                              />
+                              <path
+                                fill="currentColor"
+                                d="M6 7a1 1 0 000 2h4a1 1 0 100-2H6zM6 11a1 1 0 100 2h4a1 1 0 100-2H6zM5 16a1 1 0 011-1h4a1 1 0 110 2H6a1 1 0 01-1-1z"
+                              />
+                              <path
+                                fill="currentColor"
+                                fillRule="evenodd"
+                                d="M4 3a3 3 0 00-3 3v12a3 3 0 003 3h16a3 3 0 003-3V6a3 3 0 00-3-3H4zm16 2H4a1 1 0 00-1 1v12a1 1 0 001 1h16a1 1 0 001-1V6a1 1 0 00-1-1z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </button>
+                          <span className='tooltip rounded shadow-sm p-1 my-auto bg-gray-100 text-xs mt-10 -translate-x-12'>
+                            Live Demo
+                          </span>
+                        </div>
                       </a>
                     </li>
                   )}
