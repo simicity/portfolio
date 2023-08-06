@@ -4,6 +4,9 @@ import chatImage from '../../public/chat.png'
 import bookmarkManagerImage from '../../public/bookmark_manager.png'
 import journalImage from '../../public/journal.png'
 import healthInformationImage from '../../public/health_information.png'
+import dataVisualizationImage from '../../public/data_visualization.png'
+// Attribute: http://www.freepik.com">Designed by rawpixel.com / Freepik
+import forumImage from '../../public/forum.jpg'
 
 const tagTextColor = {
   'JavaScript': 'text-yellow-300',
@@ -37,7 +40,7 @@ const projects = [
     image: journalImage,
     tags: ['TypeScript', 'Next.js'],
     repo: 'https://github.com/simicity/co-journal',
-    url: ''
+    url: 'https://co-journal.vercel.app'
   },
   {
     title: 'Online Health Information Assessment Tool',
@@ -45,6 +48,22 @@ const projects = [
     image: healthInformationImage,
     tags: ['Python'],
     repo: 'https://github.com/aksfsu/QMOHI_tool',
+    url: ''
+  },
+  {
+    title: 'Spotify Data Visualization',
+    description: 'Data visualization for a Spotify dataset.',
+    image: dataVisualizationImage,
+    tags: ['JavaScript'],
+    repo: 'https://github.com/Miho-and-Alex/CSC805-Data-Visualization-Project',
+    url: 'https://miho-and-alex.github.io/CSC805-Data-Visualization-Project/'
+  },
+  {
+    title: 'Forum Website',
+    description: 'Forum website that allows users to form study groups by posting and commenting.',
+    image: forumImage,
+    tags: ['Python'],
+    repo: 'https://github.com/simicity/csc648-848-sw-engineering-T04',
     url: ''
   },
 ]
