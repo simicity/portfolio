@@ -21,6 +21,6 @@ export default function GlowingCursor() {
     <div
       className="glowing-cursor bg-gradient-to-br from-sky-600 to-blue-600 opacity-10 dark:opacity-20 blur-3xl"
       style={{ top: `${cursorPosition.y - 200}px`, left: `${cursorPosition.x - 200}px` }}
-    ></div>
+    />
   );
 };
