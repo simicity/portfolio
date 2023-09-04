@@ -74,18 +74,18 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main className='mt-80'>
-      <div className="grid text-center gap-10 lg:grid-cols-2 lg:text-left">
+    <main className='mt-40 p-10 pt-20 rounded-2xl bg-pink-400 dark:bg-gray-900'>
+      <div className="grid text-center gap-20 lg:grid-cols-2 lg:text-left">
         <div className='lg:mx-14 w-full col-span-full'>
-          <h1 className='font-black text-6xl'>Projects</h1>
+          <h1 className='font-black text-white text-5xl'>Projects</h1>
         </div>
         {projects.map(({title, description, image, tags, repo, url}) => (
-          <a target="_blank" href={url ? url : repo} key={title} className="project-item rounded-lg p-5 text-slate-700 dark:text-slate-200 font-medium border border-transparent hover:border-solid hover:border-slate-200 dark:hover:border-slate-400">
-            <div className='mb-3 selection:w-[400px] h-[300px] overflow-hidden rounded-lg'>
-              <Image src={image} alt={title} style={{ width: '400px', height: '300px', objectFit: 'cover' }} />
+          <a target="_blank" href={url ? url : repo} key={title} className="project-item rounded-lg p-5 text-black dark:text-white font-medium border border-transparent hover:border-solid hover:border-slate-200 dark:hover:border-slate-400">
+            <div className='mb-3 selection:w-[300px] h-[230px] overflow-hidden rounded-lg'>
+              <Image src={image} alt={title} style={{ width: '400px', height: '230px', objectFit: 'cover' }} />
             </div>
             <div className='flex justify-center lg:justify-between max-w-[400px] mb-1'>
-              <h2 className={`text-xl font-semibold my-auto`}>
+              <h2 className={`text-xl font-bold my-auto`}>
                 {title}
               </h2>
               <div className='mx-4'>
@@ -115,12 +115,12 @@ export default function Projects() {
                 </ul>
               </div>
             </div>
-            <p className={`mb-3 max-w-[400px] text-sm opacity-50`}>
+            <p className={`mb-3 max-w-[400px] text-sm font-light`}>
               {description}
             </p>
             <div className='flex justify-center lg:justify-start'>
               {tags?.map(tag => (
-                <p key={title + " " + tag} className={`text-xs rounded-md bg-slate-900 dark:bg-sky-900 ${(tagTextColor as any)[tag]} mr-1.5 mb-1 px-2.5 py-0.5`}>{tag}</p>
+                <p key={title + " " + tag} className={`text-xs rounded-lg bg-slate-900 dark:bg-sky-900 ${(tagTextColor as any)[tag]} mr-1.5 mb-1 px-3 py-1`}>{tag}</p>
               ))}
             </div>
           </a>
