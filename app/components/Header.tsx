@@ -30,7 +30,7 @@ export default function Header() {
           </li>
 
           <li className='pl-3'>
-            <a target="_blank" href="https://drive.google.com/file/d/1K4MuH7ZWv_QCc3cl9ZAv6orThP7329TS/view?usp=sharing">
+            <a target="_blank" href="https://drive.google.com/file/d/1mSyV5xuOF1AQa8Drh4wACrt_iscehMTc/view?usp=sharing">
               <ResumeIcon size={"25px"} />
             </a>
           </li>
